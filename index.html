@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hexonn Labs | Next-Gen Software Solutions</title>
+    <meta name="description" content="Discover premium software products crafted by hexonn Labs. Explore our suite, customize sign board colors, and experience state-of-the-art developer tools.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                </span>
+                <span class="logo-text">hexonn<span class="logo-accent">Labs</span></span>
+            </a>
+            <nav class="nav">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#products" class="nav-link">Software</a>
+                <a href="#visualizer" class="nav-link">Sign Board Preview</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="btn btn-sm btn-outline">Inquire</a>
+            </nav>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">Introducing hexonn Core v3.0</div>
+                <h1 class="hero-title">Forge the Future of <span class="text-gradient">Software Engineering</span></h1>
+                <p class="hero-subtitle">High-performance tools, zero-latency workflows, and AI-driven telemetry. Designed for teams that refuse to compromise on speed and quality.</p>
+                <div class="hero-actions">
+                    <a href="#products" class="btn btn-primary">Browse Software</a>
+                    <a href="#visualizer" class="btn btn-secondary">Design Sign Board</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10x</span>
+                        <span class="stat-label">Build Speed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1.2M</span>
+                        <span class="stat-label">Active Installs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="mockup-wrapper">
+                    <div class="mockup-glow"></div>
+                    <div class="mockup-frame">
+                        <div class="mockup-header">
+                            <span class="mockup-dot red"></span>
+                            <span class="mockup-dot yellow"></span>
+                            <span class="mockup-dot green"></span>
+                            <span class="mockup-title">hexonn-dashboard_v3.png</span>
+                        </div>
+                        <img src="hexonn_software_mockup.png" alt="Hexonn Labs Dashboard Mockup" class="mockup-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Selling Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Enterprise Suite</span>
+                <h2 class="section-title">Engineered to Excel</h2>
+                <p class="section-desc">Our software products solve critical engineering bottlenecks. Click on a product to explore licensing options.</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-accent="sky-blue">
+                    <div class="product-glow"></div>
+                    <div class="product-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="product-name">hexonn Nexus</h3>
+                    <p class="product-description">The ultimate developer orchestration platform. Seamlessly sync APIs, databases, and microservices in real time.</p>
+                    <ul class="product-features">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Instant API integration
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Hot-reloading data pipelines
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Edge caching optimization
+                        </li>
+                    </ul>
+                    <div class="product-footer">
+                        <div class="product-price">
+                            <span class="price-val">$49</span>
+                            <span class="price-period">/mo</span>
+                        </div>
+                        <button class="btn btn-sm btn-primary buy-btn" data-product="hexonn Nexus" data-price="$49/mo">License Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card featured" data-accent="purple">
+                    <div class="product-glow"></div>
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="product-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="product-name">hexonn Sentinel</h3>
+                    <p class="product-description">Zero-trust security and threat intelligence shield. Encrypt operations, secure endpoints, and detect anomalies via automated AI agents.</p>
+                    <ul class="product-features">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Military-grade cryptography
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Real-time anomaly telemetry
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            One-click compliance reporting
+                        </li>
+                    </ul>
+                    <div class="product-footer">
+                        <div class="product-price">
+                            <span class="price-val">$99</span>
+                            <span class="price-period">/mo</span>
+                        </div>
+                        <button class="btn btn-sm btn-primary buy-btn" data-product="hexonn Sentinel" data-price="$99/mo">License Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-accent="pink">
+                    <div class="product-glow"></div>
+                    <div class="product-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                    </div>
+                    <h3 class="product-name">hexonn Pulse</h3>
+                    <p class="product-description">Advanced performance metrics and server telemetry analytics. View comprehensive system load and user retention charts instantly.</p>
+                    <ul class="product-features">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Sub-millisecond data scraping
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Custom webhooks & alerts
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Elegant multi-tenant dashboard
+                        </li>
+                    </ul>
+                    <div class="product-footer">
+                        <div class="product-price">
+                            <span class="price-val">$29</span>
+                            <span class="price-period">/mo</span>
+                        </div>
+                        <button class="btn btn-sm btn-primary buy-btn" data-product="hexonn Pulse" data-price="$29/mo">License Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign Board Visualizer Section -->
+    <section id="visualizer" class="visualizer-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Interactive Customizer</span>
+                <h2 class="section-title">Sign Board Design Lab</h2>
+                <p class="section-desc">We are selecting the official <strong>hexonn Labs</strong> business sign board color combination. Test combinations below, choose from our shortlisted palette, and export your favorite design.</p>
+            </div>
+
+            <div class="visualizer-container">
+                <!-- Live Sign Board Rendering -->
+                <div class="signboard-preview-pane">
+                    <div class="wall-texture">
+                        <div class="signboard-container">
+                            <div class="signboard-shadow"></div>
+                            <!-- Standoffs (screws) for realism -->
+                            <div class="standoff tl"></div>
+                            <div class="standoff tr"></div>
+                            <div class="standoff bl"></div>
+                            <div class="standoff br"></div>
+                            
+                            <!-- The Sign Board itself -->
+                            <div class="signboard" id="physicalSignBoard">
+                                <div class="signboard-glow"></div>
+                                <div class="signboard-content">
+                                    <div class="signboard-icon">
+                                        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                            <polyline points="2 17 12 22 22 17"></polyline>
+                                            <polyline points="2 12 12 17 22 12"></polyline>
+                                        </svg>
+                                    </div>
+                                    <h2 class="signboard-text-primary">hexonn</h2>
+                                    <p class="signboard-text-secondary">LABS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview-caption">
+                        <span class="indicator-dot"></span> Active Render: <span id="activePresetName">Cyber Neon Glow</span>
+                    </div>
+                </div>
+
+                <!-- Customizer Controls -->
+                <div class="signboard-controls">
+                    <h3>Color Combination Palettes</h3>
+                    <p class="control-help">Select a designer-curated preset or custom-mix colors from the proposed list below.</p>
+                    
+                    <div class="presets-section">
+                        <h4>Shortlisted Sign Board Combinations</h4>
+                        <div class="presets-grid">
+                            <button class="preset-btn active" data-bg="#0c0e15" data-text="#ffffff" data-accent="#ff007f" data-secondary="#9d4edd" data-name="Cyber Neon Glow">
+                                <span class="preset-preview" style="background: linear-gradient(135deg, #0c0e15, #9d4edd); border: 2px solid #ff007f"></span>
+                                <span class="preset-label">Pink & Purple on Grey</span>
+                            </button>
+                            <button class="preset-btn" data-bg="#0f172a" data-text="#f8fafc" data-accent="#06b6d4" data-secondary="#38bdf8" data-name="Sky Tech Clean">
+                                <span class="preset-preview" style="background: linear-gradient(135deg, #0f172a, #38bdf8); border: 2px solid #06b6d4"></span>
+                                <span class="preset-label">Sky Blue & White on Grey</span>
+                            </button>
+                            <button class="preset-btn" data-bg="#1c1613" data-text="#fef08a" data-accent="#22c55e" data-secondary="#86efac" data-name="Forest & Earth">
+                                <span class="preset-preview" style="background: linear-gradient(135deg, #1c1613, #86efac); border: 2px solid #22c55e"></span>
+                                <span class="preset-label">Green & Yellow on Brown</span>
+                            </button>
+                            <button class="preset-btn" data-bg="#3c0a15" data-text="#ffffff" data-accent="#fbbf24" data-secondary="#f3f4f6" data-name="Royal Maroon Plaque">
+                                <span class="preset-preview" style="background: linear-gradient(135deg, #3c0a15, #f3f4f6); border: 2px solid #fbbf24"></span>
+                                <span class="preset-label">Maroon & Gold on White/Grey</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="customizer-options">
+                        <h4>Manual Tuning</h4>
+                        <div class="customizer-field">
+                            <label for="boardBackground">Sign Board Background:</label>
+                            <select id="boardBackground" class="control-select">
+                                <option value="#0c0e15">Dark Grey (#0c0e15)</option>
+                                <option value="#e2e8f0">Light Grey (#e2e8f0)</option>
+                                <option value="#3c0a15">Maroon (#3c0a15)</option>
+                                <option value="#23120b">Dark Brown (#23120b)</option>
+                                <option value="#ffffff">Pure White (#ffffff)</option>
+                            </select>
+                        </div>
+                        <div class="customizer-field">
+                            <label for="boardText">Main Text (hexonn):</label>
+                            <select id="boardText" class="control-select">
+                                <option value="#ffffff">White (#ffffff)</option>
+                                <option value="#fbbf24">Yellow (#fbbf24)</option>
+                                <option value="#38bdf8">Sky Blue (#38bdf8)</option>
+                                <option value="#a855f7">Purple (#a855f7)</option>
+                                <option value="#22c55e">Green (#22c55e)</option>
+                            </select>
+                        </div>
+                        <div class="customizer-field">
+                            <label for="boardAccent">Glow / Accent Color (Labs & Icon):</label>
+                            <select id="boardAccent" class="control-select">
+                                <option value="#ff007f">Pink (#ff007f)</option>
+                                <option value="#a855f7">Purple (#a855f7)</option>
+                                <option value="#38bdf8">Sky Blue (#38bdf8)</option>
+                                <option value="#22c55e">Green (#22c55e)</option>
+                                <option value="#fbbf24">Yellow (#fbbf24)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-secondary btn-full" id="exportSelectionBtn">Submit Palette Preference</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <div class="about-visual">
+                <div class="grid-pattern"></div>
+                <div class="about-card-stack">
+                    <div class="about-card-back"></div>
+                    <div class="about-card-front">
+                        <div class="about-header">
+                            <span class="terminal-dot"></span>
+                            <span class="terminal-dot"></span>
+                            <span class="terminal-dot"></span>
+                        </div>
+                        <code class="terminal-body">
+                            <span class="line-num">1</span> <span class="t-keyword">const</span> labs = <span class="t-string">"hexonn"</span>;<br>
+                            <span class="line-num">2</span> <span class="t-keyword">const</span> mission = <span class="t-string">"Empowering developers worldwide"</span>;<br>
+                            <span class="line-num">3</span> <span class="t-keyword">function</span> <span class="t-fn">deploy</span>() {<br>
+                            <span class="line-num">4</span> &nbsp;&nbsp;<span class="t-comment">// continuous delivery optimized</span><br>
+                            <span class="line-num">5</span> &nbsp;&nbsp;<span class="t-keyword">return</span> <span class="t-keyword">new</span> <span class="t-class">Promise</span>((res) => res(labs + <span class="t-string">" successfully running"</span>));<br>
+                            <span class="line-num">6</span> }<br>
+                            <span class="line-num">7</span> deploy().then(console.log);
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-tag">About the Labs</span>
+                <h2 class="section-title">Where Software Meets Science</h2>
+                <p class="about-desc">At hexonn Labs, we believe that development interfaces and software infrastructure should be fast, highly reliable, and beautiful to interact with. From complex edge nodes to sleek interactive control panels, our products are engineered from the ground up for maximum speed and accessibility.</p>
+                <div class="about-features">
+                    <div class="about-feat-item">
+                        <div class="feat-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <div>
+                            <h5>High Availability</h5>
+                            <p>Global edge distribution guarantees software accessibility anytime, anywhere.</p>
+                        </div>
+                    </div>
+                    <div class="about-feat-item">
+                        <div class="feat-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        </div>
+                        <div>
+                            <h5>Modular Architecture</h5>
+                            <p>Integrate our software solutions modularly into your existing tech stacks with zero bloat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry / Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h2 class="contact-title">Start Your Integration</h2>
+                    <p class="contact-desc">Ready to scale your systems? Get in touch with our solutions architects. Let us know if you want custom licensing, product support, or have feedback on our branding color combinations!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>hello@hexonnlabs.com</span>
+                        </div>
+                        <div class="contact-detail-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Silicon Valley, CA</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="inquiryForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="clientName">Full Name</label>
+                            <input type="text" id="clientName" required placeholder="e.g. John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="clientEmail">Email Address</label>
+                            <input type="email" id="clientEmail" required placeholder="e.g. john@company.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="productSelect">Select Product / Interest</label>
+                        <select id="productSelect" class="form-select">
+                            <option value="general">General Branding & Sign Board Feedback</option>
+                            <option value="nexus">hexonn Nexus Software license</option>
+                            <option value="sentinel">hexonn Sentinel Security suite</option>
+                            <option value="pulse">hexonn Pulse Telemetry tool</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiryMessage">Message / Custom Requests</label>
+                        <textarea id="inquiryMessage" rows="4" required placeholder="Write your message here... Feel free to leave a note on your preferred Sign Board color combinations!"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2.5" fill="none">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                        </svg>
+                    </span>
+                    <span>hexonn<span class="logo-accent">Labs</span></span>
+                </a>
+                <p class="footer-tagline">Building elite infrastructure tools since 2024.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h6>Products</h6>
+                    <a href="#products">hexonn Nexus</a>
+                    <a href="#products">hexonn Sentinel</a>
+                    <a href="#products">hexonn Pulse</a>
+                </div>
+                <div class="footer-col">
+                    <h6>Branding</h6>
+                    <a href="#visualizer">Sign Board Customizer</a>
+                    <a href="#visualizer">Color Combos</a>
+                </div>
+                <div class="footer-col">
+                    <h6>Legal & Contact</h6>
+                    <a href="#contact">Contact Support</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 hexonn Labs Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Software Checkout Modal (Licensing flow) -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <h3>Order Software License</h3>
+            </div>
+            <div class="modal-body">
+                <p>You have selected: <strong id="modalProductName">hexonn Nexus</strong> at <strong id="modalProductPrice">$49/mo</strong>.</p>
+                <form id="modalCheckoutForm">
+                    <div class="form-group">
+                        <label for="buyerName">Your Name</label>
+                        <input type="text" id="buyerName" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="buyerEmail">Work Email</label>
+                        <input type="email" id="buyerEmail" required placeholder="john@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="companyName">Company Name</label>
+                        <input type="text" id="companyName" required placeholder="Company Inc.">
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" class="btn btn-secondary modal-cancel">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Confirm & Activate</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="notificationToast">
+        <div class="toast-content">
+            <div class="toast-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <div class="toast-text">
+                <h5 id="toastTitle">Notification</h5>
+                <p id="toastMessage">Action completed successfully.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
