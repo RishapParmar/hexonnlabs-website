@@ -28,7 +28,7 @@
             <nav class="nav">
                 <a href="#hero" class="nav-link">Home</a>
                 <a href="#products" class="nav-link">Software</a>
-                <a href="#visualizer" class="nav-link">Sign Board Preview</a>
+                <a href="#projects" class="nav-link">Projects</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#contact" class="btn btn-sm btn-outline">Inquire</a>
             </nav>
@@ -50,7 +50,7 @@
                 <p class="hero-subtitle">High-performance tools, zero-latency workflows, and AI-driven telemetry. Designed for teams that refuse to compromise on speed and quality.</p>
                 <div class="hero-actions">
                     <a href="#products" class="btn btn-primary">Browse Software</a>
-                    <a href="#visualizer" class="btn btn-secondary">Design Sign Board</a>
+                    <a href="#contact" class="btn btn-secondary">Inquire Now</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-item">
@@ -202,111 +202,127 @@
         </div>
     </section>
 
-    <!-- Sign Board Visualizer Section -->
-    <section id="visualizer" class="visualizer-section">
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Interactive Customizer</span>
-                <h2 class="section-title">Sign Board Design Lab</h2>
-                <p class="section-desc">We are selecting the official <strong>hexonn Labs</strong> business sign board color combination. Test combinations below, choose from our shortlisted palette, and export your favorite design.</p>
+                <span class="section-tag">Case Studies</span>
+                <h2 class="section-title">Innovations in Action</h2>
+                <p class="section-desc">Explore our latest deployments across artificial intelligence, robotics orchestration, and system engineering consultancies.</p>
             </div>
-
-            <div class="visualizer-container">
-                <!-- Live Sign Board Rendering -->
-                <div class="signboard-preview-pane">
-                    <div class="wall-texture">
-                        <div class="signboard-container">
-                            <div class="signboard-shadow"></div>
-                            <!-- Standoffs (screws) for realism -->
-                            <div class="standoff tl"></div>
-                            <div class="standoff tr"></div>
-                            <div class="standoff bl"></div>
-                            <div class="standoff br"></div>
-                            
-                            <!-- The Sign Board itself -->
-                            <div class="signboard" id="physicalSignBoard">
-                                <div class="signboard-glow"></div>
-                                <div class="signboard-content">
-                                    <div class="signboard-icon">
-                                        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                                            <polyline points="2 17 12 22 22 17"></polyline>
-                                            <polyline points="2 12 12 17 22 12"></polyline>
-                                        </svg>
-                                    </div>
-                                    <h2 class="signboard-text-primary">hexonn</h2>
-                                    <p class="signboard-text-secondary">LABS</p>
-                                </div>
-                            </div>
-                        </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: AI -->
+                <div class="project-card" data-accent="sage">
+                    <div class="project-image-placeholder">
+                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
                     </div>
-                    <div class="preview-caption">
-                        <span class="indicator-dot"></span> Active Render: <span id="activePresetName">Cyber Neon Glow</span>
+                    <div class="project-card-content">
+                        <span class="project-tag-badge">AI Integration</span>
+                        <h3 class="project-name">Project Alpha</h3>
+                        <p class="project-description">A real-time neural synthesis pipeline orchestrator designed for custom machine learning architecture workflows.</p>
+                        <a href="#contact" class="project-link">
+                            Inquire Project 
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Customizer Controls -->
-                <div class="signboard-controls">
-                    <h3>Color Combination Palettes</h3>
-                    <p class="control-help">Select a designer-curated preset or custom-mix colors from the proposed list below.</p>
-                    
-                    <div class="presets-section">
-                        <h4>Shortlisted Sign Board Combinations</h4>
-                        <div class="presets-grid">
-                            <button class="preset-btn active" data-bg="#0c0e15" data-text="#ffffff" data-accent="#ff007f" data-secondary="#9d4edd" data-name="Cyber Neon Glow">
-                                <span class="preset-preview" style="background: linear-gradient(135deg, #0c0e15, #9d4edd); border: 2px solid #ff007f"></span>
-                                <span class="preset-label">Pink & Purple on Grey</span>
-                            </button>
-                            <button class="preset-btn" data-bg="#0f172a" data-text="#f8fafc" data-accent="#06b6d4" data-secondary="#38bdf8" data-name="Sky Tech Clean">
-                                <span class="preset-preview" style="background: linear-gradient(135deg, #0f172a, #38bdf8); border: 2px solid #06b6d4"></span>
-                                <span class="preset-label">Sky Blue & White on Grey</span>
-                            </button>
-                            <button class="preset-btn" data-bg="#1c1613" data-text="#fef08a" data-accent="#22c55e" data-secondary="#86efac" data-name="Forest & Earth">
-                                <span class="preset-preview" style="background: linear-gradient(135deg, #1c1613, #86efac); border: 2px solid #22c55e"></span>
-                                <span class="preset-label">Green & Yellow on Brown</span>
-                            </button>
-                            <button class="preset-btn" data-bg="#3c0a15" data-text="#ffffff" data-accent="#fbbf24" data-secondary="#f3f4f6" data-name="Royal Maroon Plaque">
-                                <span class="preset-preview" style="background: linear-gradient(135deg, #3c0a15, #f3f4f6); border: 2px solid #fbbf24"></span>
-                                <span class="preset-label">Maroon & Gold on White/Grey</span>
-                            </button>
-                        </div>
+                <!-- Project 2: Robotics -->
+                <div class="project-card" data-accent="slate">
+                    <div class="project-image-placeholder">
+                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
                     </div>
+                    <div class="project-card-content">
+                        <span class="project-tag-badge">Robotics</span>
+                        <h3 class="project-name">Project Beta</h3>
+                        <p class="project-description">Low-latency kinematic motion pathfinding core for 6-axis industrial robot arms and collaborative assemblies.</p>
+                        <a href="#contact" class="project-link">
+                            Inquire Project 
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
 
-                    <div class="customizer-options">
-                        <h4>Manual Tuning</h4>
-                        <div class="customizer-field">
-                            <label for="boardBackground">Sign Board Background:</label>
-                            <select id="boardBackground" class="control-select">
-                                <option value="#0c0e15">Dark Grey (#0c0e15)</option>
-                                <option value="#e2e8f0">Light Grey (#e2e8f0)</option>
-                                <option value="#3c0a15">Maroon (#3c0a15)</option>
-                                <option value="#23120b">Dark Brown (#23120b)</option>
-                                <option value="#ffffff">Pure White (#ffffff)</option>
-                            </select>
-                        </div>
-                        <div class="customizer-field">
-                            <label for="boardText">Main Text (hexonn):</label>
-                            <select id="boardText" class="control-select">
-                                <option value="#ffffff">White (#ffffff)</option>
-                                <option value="#fbbf24">Yellow (#fbbf24)</option>
-                                <option value="#38bdf8">Sky Blue (#38bdf8)</option>
-                                <option value="#a855f7">Purple (#a855f7)</option>
-                                <option value="#22c55e">Green (#22c55e)</option>
-                            </select>
-                        </div>
-                        <div class="customizer-field">
-                            <label for="boardAccent">Glow / Accent Color (Labs & Icon):</label>
-                            <select id="boardAccent" class="control-select">
-                                <option value="#ff007f">Pink (#ff007f)</option>
-                                <option value="#a855f7">Purple (#a855f7)</option>
-                                <option value="#38bdf8">Sky Blue (#38bdf8)</option>
-                                <option value="#22c55e">Green (#22c55e)</option>
-                                <option value="#fbbf24">Yellow (#fbbf24)</option>
-                            </select>
-                        </div>
+                <!-- Project 3: Consultancy -->
+                <div class="project-card" data-accent="sage">
+                    <div class="project-image-placeholder">
+                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                            <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                        </svg>
                     </div>
-                    
-                    <button class="btn btn-secondary btn-full" id="exportSelectionBtn">Submit Palette Preference</button>
+                    <div class="project-card-content">
+                        <span class="project-tag-badge">Consultancy</span>
+                        <h3 class="project-name">Project Gamma</h3>
+                        <p class="project-description">Detailed microservice audit and bottleneck optimization executed for enterprise-scale distributed edge nodes.</p>
+                        <a href="#contact" class="project-link">
+                            Inquire Project 
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: AI -->
+                <div class="project-card" data-accent="slate">
+                    <div class="project-image-placeholder">
+                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                            <circle cx="12" cy="13" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="project-card-content">
+                        <span class="project-tag-badge">AI Vision</span>
+                        <h3 class="project-name">Project Delta</h3>
+                        <p class="project-description">Embedded high-speed visual inspection defect tracking system deployed on remote hardware modules.</p>
+                        <a href="#contact" class="project-link">
+                            Inquire Project 
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Robotics -->
+                <div class="project-card" data-accent="sage">
+                    <div class="project-image-placeholder">
+                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 2 22 22 22 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <div class="project-card-content">
+                        <span class="project-tag-badge">Robotics Nav</span>
+                        <h3 class="project-name">Project Epsilon</h3>
+                        <p class="project-description">LiDAR-based navigation, mapping, and collision avoidance stack for automated warehouse mobile robots.</p>
+                        <a href="#contact" class="project-link">
+                            Inquire Project 
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6: Consultancy -->
+                <div class="project-card" data-accent="slate">
+                    <div class="project-image-placeholder">
+                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 10h-1.25A3.48 3.48 0 0 0 14 9V8a3.5 3.5 0 0 0-7 0v1a3.48 3.48 0 0 0-2.75 1H3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h15a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1z"></path>
+                        </svg>
+                    </div>
+                    <div class="project-card-content">
+                        <span class="project-tag-badge">Consulting Sys</span>
+                        <h3 class="project-name">Project Zeta</h3>
+                        <p class="project-description">Custom high-frequency cloud log aggregation and system telemetry setup built for trading desk platforms.</p>
+                        <a href="#contact" class="project-link">
+                            Inquire Project 
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -438,9 +454,10 @@
                     <a href="#products">hexonn Pulse</a>
                 </div>
                 <div class="footer-col">
-                    <h6>Branding</h6>
-                    <a href="#visualizer">Sign Board Customizer</a>
-                    <a href="#visualizer">Color Combos</a>
+                    <h6>Company</h6>
+                    <a href="#about">About Us</a>
+                    <a href="#projects">Our Projects</a>
+                    <a href="#contact">Get In Touch</a>
                 </div>
                 <div class="footer-col">
                     <h6>Legal & Contact</h6>

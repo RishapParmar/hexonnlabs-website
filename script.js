@@ -6,14 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('section');
 
-    // Signboard Customizer Elements
-    const physicalSignBoard = document.getElementById('physicalSignBoard');
-    const activePresetName = document.getElementById('activePresetName');
-    const presetButtons = document.querySelectorAll('.preset-btn');
-    const selectBg = document.getElementById('boardBackground');
-    const selectText = document.getElementById('boardText');
-    const selectAccent = document.getElementById('boardAccent');
-    const exportBtn = document.getElementById('exportSelectionBtn');
+
 
     // Checkout Modal Elements
     const modal = document.getElementById('checkoutModal');
@@ -54,12 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Sticky Header styling
         if (window.scrollY > 50) {
             header.style.padding = '5px 0';
-            header.style.boxShadow = '0 10px 30px rgba(0,0,0,0.3)';
-            header.style.background = 'rgba(7, 9, 19, 0.95)';
+            header.style.boxShadow = '0 10px 30px rgba(20, 48, 34, 0.06)';
+            header.style.background = 'rgba(252, 251, 249, 0.95)';
         } else {
             header.style.padding = '0';
             header.style.boxShadow = 'none';
-            header.style.background = 'rgba(7, 9, 19, 0.75)';
+            header.style.background = 'rgba(252, 251, 249, 0.82)';
         }
 
         // Scroll Spy active navigation
@@ -80,92 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* ==========================================================================
-       2. Sign Board Interactive Visualizer
-       ========================================================================== */
-    // Helper to calculate hex color opacity glow
-    function getGlowColor(hex) {
-        // Simple hex-to-rgb conversion
-        let c = hex.substring(1);
-        let rgb = parseInt(c, 16);
-        let r = (rgb >> 16) & 0xff;
-        let g = (rgb >> 8) & 0xff;
-        let b = (rgb >> 0) & 0xff;
-        return `rgba(${r}, ${g}, ${b}, 0.45)`;
-    }
 
-    // Apply colors to physical signboard
-    function applySignBoardColors(bg, text, accent) {
-        physicalSignBoard.style.setProperty('--sign-bg', bg);
-        physicalSignBoard.style.setProperty('--sign-text', text);
-        physicalSignBoard.style.setProperty('--sign-accent', accent);
-        physicalSignBoard.style.setProperty('--sign-accent-glow', getGlowColor(accent));
-    }
-
-    // Preset button click handler
-    presetButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Remove active status
-            presetButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            // Retrieve configuration values
-            const bg = btn.dataset.bg;
-            const text = btn.dataset.text;
-            const accent = btn.dataset.accent;
-            const name = btn.dataset.name;
-
-            // Apply to visualizer CSS
-            applySignBoardColors(bg, text, accent);
-
-            // Sync Dropdown Selects
-            selectBg.value = bg;
-            selectText.value = text;
-            selectAccent.value = accent;
-
-            // Update render caption name
-            activePresetName.innerText = name;
-        });
-    });
-
-    // Dropdown value changes handler
-    function handleCustomDropdownChange() {
-        // Remove preset highlight, since user manually overridden colors
-        presetButtons.forEach(btn => btn.classList.remove('active'));
-        
-        const bg = selectBg.value;
-        const text = selectText.value;
-        const accent = selectAccent.value;
-
-        applySignBoardColors(bg, text, accent);
-        activePresetName.innerText = 'Custom Board Mix';
-    }
-
-    selectBg.addEventListener('change', handleCustomDropdownChange);
-    selectText.addEventListener('change', handleCustomDropdownChange);
-    selectAccent.addEventListener('change', handleCustomDropdownChange);
-
-    // Export Color Preferences Action
-    exportBtn.addEventListener('click', () => {
-        const bg = selectBg.value;
-        const text = selectText.value;
-        const accent = selectAccent.value;
-        const preset = activePresetName.innerText;
-
-        showToast(
-            'Palette Logged!',
-            `Sign board preference stored: "${preset}" (${bg} bg, ${text} text, ${accent} accent).`
-        );
-        
-        // Auto fill form message to make it feel connected
-        const messageBox = document.getElementById('inquiryMessage');
-        const prodSelect = document.getElementById('productSelect');
-        prodSelect.value = 'general';
-        messageBox.value = `Hi hexonn Labs! I just reviewed the Sign Board Visualizer. I really like the combination: "${preset}" with ${bg} Background, ${text} Text, and ${accent} LED Glow. Please use this style!`;
-        
-        // Smooth scroll user directly down to form
-        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-    });
 
     /* ==========================================================================
        3. Checkout Modal (Software Licensing)
